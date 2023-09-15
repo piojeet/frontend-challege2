@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca:wght@400;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Mulish:wght@200&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+
+:root {
+    /* ### Primary */
+
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+
+/* ### Neutral */
+
+--Transparent-white: hsla(0, 0%, 100%, 0.75);
+--Very-light-gray: hsl(0, 0%, 95%);
+}
+
+
+
+@media only screen and (max-width: 1440px) {
+    .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 4%;
+}
+
+.container div {
+    width: 15rem;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.container div p {
+    font-size: 15px;
+    padding: 1rem 0 2rem 0;
+    color: var(--Very-light-gray);
+    line-height: 22px;
+}
+
+.container div h1 {
+    font-size: 25px;
+    padding: 0.5rem 0;
+    color: var(--Very-light-gray);
+}
+
+.container div:nth-child(1) {
+    background: var(--Bright-orange);
+}
+
+.container div button {
+    outline: none;
+    border: none;
+    padding: 4px 8px;
+    background: transparent;
+    border-radius: 20px;
+    border: 2px solid var(--Transparent-white);
+    margin-top: 2rem;
+    color: var(--Transparent-white);
+    cursor: pointer;
+}
+
+.container div button:hover {
+    background: var(--Transparent-white);
+}
+
+.first-btn:hover {
+    color: var(--Bright-orange);
+}
+
+.second-btn:hover {
+    color: var(--Dark-cyan);
+}
+
+.third-btn:hover {
+    color: var(--Very-dark-cyan);
+}
+
+.container div:nth-child(2) {
+    background: var(--Dark-cyan);
+}
+
+.container div:nth-child(3) {
+    background: var(--Very-dark-cyan);
+}
+
+
+}
+
+
+
+@media only screen and (max-width: 750px) {
+    .container {
+        flex-wrap: wrap;
+        padding: 2rem 3%;
+        height: auto;
+    }
+
+}
+
+
+@media only screen and (max-width: 375px) {
+    .container div {
+        width: 100%;
+    }
+}
